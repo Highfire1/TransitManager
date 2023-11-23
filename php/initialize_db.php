@@ -113,6 +113,7 @@ function initialize_db($dbname = "transitmanager") {
 
     $result = $conn->query("CREATE DATABASE IF NOT EXISTS $dbname;");
     $result = $conn->query("USE $dbname;");
+	$result = $conn->multi_query($query);
 
     $conn->close();
 }
