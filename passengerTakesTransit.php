@@ -1,9 +1,15 @@
 <?php
+$servername = "localhost";
+$username = "root"; //my username
+$password = "root"; // my password
+$dbname = "transit";
 
-include 'DBUtilities.php';
-$conn = createDBConnection();
-
-
+// Creating Connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Checking Connection
+if($conn->connect_error){
+	die("Connection Failed: " . $conn->connect_error);
+}
 $PID=$_POST['id'];
 
 $query = "SELECT PID, Name, V_ID

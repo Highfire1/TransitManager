@@ -12,7 +12,7 @@
 <body>
     <header>
         <h1>Transit Manager</h1>
-        <button>Manage Cards</button>
+        <button><a href="/account.html">Manage Cards</a></button>
     </header>
 
     <img id="bannerimage" src="assets/banner.jpg">
@@ -20,8 +20,7 @@
     <div id="content">
         <p>Welcome to Transit Manager: the one and only solution for managing a modern transit solution.</p>
         
-        <h3>Try our new route finder today.</h3>
-        <p>Insert route finder here</p>
+
         <br>
         <br>
         <br>
@@ -38,12 +37,14 @@
         <p><b>Admin Tools:</b></p>
         
         <span><a href="/routes.html">Routes</a></span>
+        <br>
 
         <span><a href="/passenger.html">Passengers</a></span>
-
-        <span><a href="/transit_vehicle.html">Transit Vehicles</a></span>
-
         <br>
+        <span><a href="/transit_vehicle.html">Transit Vehicles</a></span>
+        <br>
+        <p></p>
+
         <form action="php/DBUtilities.php" method="post">
             <input type="submit" value="Re-Initialize Database.">
         </form>

@@ -1,23 +1,23 @@
-<?php declare(strict_types=1);
+<?php
+$servername = "localhost";
+$username = "root"; //my username
+$password = "root"; // my password
+$dbname = "transit";
 
+// Creating Connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Checking Connection
+if($conn->connect_error){
+	die("Connection Failed: " . $conn->connect_error);
+}
 
 $DID=$_POST['driverid'];
-
-
-
-
-include 'DBUtilities.php';
-$conn = createDBConnection();
 
 $query = "SELECT DID, DName, VID 
           FROM driver d, transitvehicle tv
           WHERE d.DID = '$DID' AND d.DID = tv.D_ID 
           ";
 $result = $conn->query($query);
-$conn->close();
-
-
-
 
 echo "<h1 style=\"text-align:center;\">Driver Drives Vehicle<h1>";
 echo "<table align=\"center\" border= \"1\" style=\"font-size:1.1em;\">";
@@ -41,4 +41,5 @@ else{
 	echo "0 results";
 }
 
+$conn->close();
 ?>

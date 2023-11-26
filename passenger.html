@@ -26,7 +26,7 @@
 <body>
     <h1>Passenger</h1>
     <div>
-        <form action="php/SeeAllPassengers.php" method="get">
+        <form action="SeeAllPassengers.php" method="get">
             <fieldset>
                 <legend><strong>Search Passenger</strong></legend>
                 <label for="seeall">See All Passengers</label>
@@ -35,7 +35,21 @@
         </form>
     </div>
     <div>
-        <form action="php/searchPassenger.php" method="post">
+        <form action="passengerProjection.php" method = "post">
+            <fieldset>
+                <legend><strong>Project Passenger Attributes</strong></legend>
+                <label for="columns">Select which columns to project: </label>
+                <br>
+                <input type = "checkbox" name = "columns[]" value = "Name">Name
+                <input type = "checkbox" name = "columns[]" value = "Age">Age
+                <input type = "checkbox" name = "columns[]" value = "Balance">Balance
+                <br>
+                <input type = "submit" value = "Submit">
+            </fieldset>
+        </form>
+    </div>
+    <div>
+        <form action="searchPassenger.php" method="post">
             <fieldset>
                 <legend><strong>Search Passenger By Id</strong></legend>
                 <label for="id">Passenger Id: </label>
@@ -45,7 +59,7 @@
         </form>
     </div>
     <div>
-        <form action="php/seeAllCards.php" method="post">
+        <form action="seeAllCards.php" method="post">
             <fieldset>
                 <legend><strong>See all Cards</strong></legend>
                 <label for="seeall">See All Cards</label>
@@ -54,7 +68,7 @@
         </form>
     </div>
     <div>
-        <form action="php/seeBalanceOfPassenger.php" method="post">
+        <form action="seeBalanceOfPassenger.php" method="post">
             <fieldset>
                 <legend><strong>See Card Balance of Passenger</strong></legend>
                 <label for="id">Passenger Id: </label>
@@ -64,7 +78,7 @@
         </form>
     </div>
     <div>
-        <form action="php/passengerTakesTransit.php" method="post">
+        <form action="passengerTakesTransit.php" method="post">
             <fieldset>
                 <legend><strong>Vehicles Passenger has Taken</strong></legend>
                 <label for="id">Passenger Id: </label>
@@ -74,7 +88,7 @@
         </form>
     </div>
     <div>
-        <form action="php/passengerThatTakesAllTransit.php" method="get">
+        <form action="passengerThatTakesAllTransit.php" method="get">
             <fieldset>
                 <legend><strong>Passenger(s) That has Taken All Transit</strong></legend>
                 <label for="seeall">Find Passenger(s)</label>
@@ -82,7 +96,33 @@
             </fieldset>
         </form>
     </div>
-    
+    <div>
+        <form action="Aggregation/averageAgeOfAllPassengers.php" method="get">
+            <fieldset>
+                <legend><strong>Average Age of All Passengers</strong></legend>
+                <label for="seeavg">Find Average Age</label>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </div>
+    <div>
+        <form action="Aggregation/averageBalanceBetweenAllPassengers.php" method="get">
+            <fieldset>
+                <legend><strong>Average Balance of All Passengers</strong></legend>
+                <label for="seeavg">Find Average Balance</label>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </div>
+    <div>
+        <form action="Aggregation/averageNumberOfBusesTakenPassenger.php" method="get">
+            <fieldset>
+                <legend><strong>Average Number of Buses Taken Per Passenger</strong></legend>
+                <label for="seeavg">Find Average Buses Taken</label>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </div>
 
 <!--
     http://localhost/groupProject/passenger.html

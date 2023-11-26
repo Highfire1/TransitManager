@@ -1,7 +1,15 @@
 <?php
-include 'DBUtilities.php';
-$conn = createDBConnection();
+$servername = "localhost";
+$username = "root"; //my username
+$password = "root"; // my password
+$dbname = "transit";
 
+// Creating Connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Checking Connection
+if($conn->connect_error){
+	die("Connection Failed: " . $conn->connect_error);
+}
 $VID=$_POST['seetype'];
 
 $query = "SELECT *

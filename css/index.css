@@ -39,17 +39,21 @@ footer {
     padding-bottom: 10px;
     background-color: rgb(42, 42, 172);
     color:white;
-    
 }
 
-a:link,
-a:visited,
-a:hover,
-a:active{
+span > a:link,
+span > a:visited,
+span > a:hover,
+span > a:active{
     color: white;
-    display:block;
+}
+
+button > a:link,
+button > a:visited {
+    color: black !important;
+
 }
 
 span {
-    display:block;
+    display: inline-block;
 }

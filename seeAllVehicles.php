@@ -1,7 +1,15 @@
 <?php
+$servername = "localhost";
+$username = "root"; //my username
+$password = "root"; // my password
+$dbname = "transit";
 
-include 'DBUtilities.php';
-$conn = createDBConnection();
+// Creating Connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Checking Connection
+if($conn->connect_error){
+	die("Connection Failed: " . $conn->connect_error);
+}
 
 $query = "SELECT VID, D_ID, T_Capacity, Status FROM transitvehicle";
 $result = $conn->query($query);

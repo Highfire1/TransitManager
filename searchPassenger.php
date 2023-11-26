@@ -1,12 +1,21 @@
 <?php
+$servername = "localhost";
+$username = "root"; //my username
+$password = "root"; // my password
+$dbname = "transit";
 
-include 'DBUtilities.php';
-$conn = createDBConnection();
+// Creating Connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Checking Connection
+if($conn->connect_error){
+	die("Connection Failed: " . $conn->connect_error);
+}
+$PID=$_POST['id'];
 
-$query = "SELECT PID, Name, Age FROM passenger";
+$query = "SELECT PID, Name, Age FROM passenger WHERE PID='$PID'";
 $result = $conn->query($query);
 
-echo "<h1 style=\"text-align:center;\">All Passengers<h1>";
+echo "<h1 style=\"text-align:center;\">Passenger<h1>";
 echo "<table align=\"center\" border= \"1\" style=\"font-size:1.1em;\">";
 echo "<tr>
 <th>PID</th>

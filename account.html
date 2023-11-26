@@ -30,12 +30,37 @@
 <body>
     <h1>Passenger Log In</h1>
     <div>
-        <form action="php/searchRoute.php" method="post">
+        <form action="php/accounts/login.php" method="post">
             <fieldset>
                 <legend><strong>Passenger Log In</strong></legend>
-                <label for="routeid">Name: </label>
-                <input input="text" id="name" name="passengername">
+                <label for="routeid">Passenger ID: </label>
+                <input input="text" id="passengerID" name="passengerID">
+                <br>
+                <label for="routeid">Password: </label>
                 <input input="text" id="password" name="passengerpassword">
+                <br>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </div>
+
+    <div>
+        <form action="php/accounts/createPassenger.php" method="post">
+            <fieldset>
+                <legend><strong>Create Passenger</strong></legend>
+                <label for="name">Name: </label>
+                <input input="text" id="name" name="name">
+                <br>
+                <label for="age">Age: </label>
+                <input input="text" id="age" name="age">
+                <br>
+                <label for="ctype">Category: </label>
+                <select id="ctype" name="ctype">
+                    <option value="Adult">Adult</option>
+                    <option value="Youth">Youth</option>
+                    <option value="Senior">Senior</option>
+                </select>
+                <br>
                 <input type="submit" value="Submit">
             </fieldset>
         </form>

@@ -1,0 +1,19 @@
+div {
+    display: block;
+    max-width: 1000px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+form {
+    font-size: 1.2em;
+}
+
+h1 {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}

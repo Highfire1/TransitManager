@@ -30,7 +30,7 @@
 <body>
     <h1>Routes and Stops</h1>
     <div>
-        <form action="php/seeAllRoutes.php" method="get">
+        <form action="seeAllRoutes.php" method="get">
             <fieldset>
                 <legend><strong>All Routes</strong></legend>
                 <label for="seeall">See All Routes</label>
@@ -39,7 +39,7 @@
         </form>
     </div>
     <div>
-        <form action="php/searchRoute.php" method="post">
+        <form action="searchRoute.php" method="post">
             <fieldset>
                 <legend><strong>Find Route</strong></legend>
                 <label for="routeid">Route ID: </label>
@@ -49,7 +49,7 @@
         </form>
     </div>
     <div>
-        <form action="php/seeStopsOfRoute.php" method="post">
+        <form action="seeStopsOfRoute.php" method="post">
             <fieldset>
                 <legend><strong>Find associated Stops of Route</strong></legend>
                 <label for="routeid">Route ID: </label>
@@ -59,28 +59,20 @@
         </form>
     </div>
     <div>
-        <form action="php/seeAllStops.php" method="get">
+        <form action="seeAllStops.php" method="get">
             <fieldset>
-                <legend><strong></strong></legend>
+                <legend><strong>All Stops</strong></legend>
                 <label for="seeall">See all Stops</label>
                 <input type="submit" value="Submit">
             </fieldset>
         </form>
     </div>
     <div>
-        <form action="php/checkRouteTransferable.php" method="post">
+        <form action="checkRouteTransferable.php" method="post">
             <fieldset>
                 <legend><strong>Route Transfers</strong></legend>
-                <label for = "routeid">Route ID: </label>"
+                <label for = "routeid">Route ID: </label>
                 <input input="text" id="routeid" name="routeid">
-                <input type="submit" value="Submit">
-            </fieldset>
-        </form>
-    </div>
-    <div>
-        <form action="" method="">
-            <fieldset>
-                <legend><strong></strong></legend>
                 <input type="submit" value="Submit">
             </fieldset>
         </form>
