@@ -5,7 +5,7 @@ function createDBConnection(String $username="root", String $password="root", St
     $servername = "localhost";
 
     // Create connection
-    $conn = new mysqli($servername, $username, $password);
+    $conn = new mysqli($servername, $username, $password, $dbname);
 
     // Check that connection is successful
     if ($conn->connect_error) { die("Connection failed: " . $conn->connect_error); }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Passenger Log In</title>
+    <meta charset="utf-8">
+    <style>
+        div {
+            display: block;
+            max-width: 1000px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 40px;
+        }
+
+        form {
+            font-size: 1.2em;
+        }
+
+        h1 {
+            display: block;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Passenger Log In</h1>
+    <div>
+        <form action="php/searchRoute.php" method="post">
+            <fieldset>
+                <legend><strong>Passenger Log In</strong></legend>
+                <label for="routeid">Name: </label>
+                <input input="text" id="name" name="passengername">
+                <input input="text" id="password" name="passengerpassword">
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+
+</html>
