@@ -1,5 +1,7 @@
 # Transit Manager
-A Group project for CPSC 2221 : Databases
+A Group project for CPSC 2221 : Database Systems.
+
+This project implements an interface that represents a transit database. It allows a user to interact with and access data regarding all passengers, transit vehicles, and routes. Furthermore, a user is allowed to modify all passengers, such as adding a passenger, deleting a passenger, or increasing the balance of a passenger’s card.
 
 
 
