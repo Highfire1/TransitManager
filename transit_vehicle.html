@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Transit Vehicles</title>
+<meta charset="utf-8">
+<style>
+    div{
+        display:block;
+        max-width: 1000px;
+        text-align: center;
+        margin-left:auto;
+        margin-right:auto;
+        margin-bottom: 40px;
+    }
+    form{
+        font-size: 1.2em;
+    }
+    h1{
+        display:block;
+        text-align: center;
+        margin-left:auto;
+        margin-right:auto;
+    }
+</style>
+</head>
+<body>
+    <h1>Transit Vehicles</h1>
+    <div>
+        <form action="php/seeAllvehicles.php" method="get">
+            <fieldset>
+                <legend><strong>All Vehicles</strong></legend>
+                <label for="seeall">See All Vehicles</label>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </div>
+    <div>
+        <form action="php/seeVehicleType.php" method="post">
+            <fieldset>
+                <legend><strong>Search Vehicle Type</strong></legend>
+                <label for="seetype">Vehicle ID: </label>
+                <input type="text" id="seetype" name="seetype">
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </div>
+    <div>
+        <form action="php/transitTakesRoute.php" method="post">
+            <fieldset>
+                <legend><strong>Search Transit Route</strong></legend>
+                <label for="vehicleid">Vehicle ID: </label>
+                <input type="text" id="vehicleid" name="vehicleid">
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </div>
+    <div>
+        <form action="php/seeAllDrivers.php" method="post">
+            <fieldset>
+                <legend><strong>All Vehicle Drivers</strong></legend>
+                <label for="alldrivers">Find All Drivers: </label>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </div>
+    <div>
+        <form action="php/searchDriver.php" method="post">
+            <fieldset>
+                <legend><strong>Search Vehicle Driver</strong></legend>
+                <label for="driverid">Driver ID: </label>
+                <input type="text" id="driverid" name="driverid">
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </div>
+    <div>
+        <form action="php/driverDrivesVehicle.php" method="post">
+            <fieldset>
+                <legend><strong>Search Driver Associated with Vehicle</strong></legend>
+                <label for="driverid">Driver ID: </label>
+                <input type="text" id="driverid" name="driverid">
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </div>
+    
+
+
+<!--
+    http://localhost/groupProject/transit_vehicle.html
+-->
+
+</body>
+</html>

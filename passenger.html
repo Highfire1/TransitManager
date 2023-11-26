@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Passengers</title>
+<meta charset="utf-8">
+<style>
+    div{
+        display:block;
+        max-width: 1000px;
+        text-align: center;
+        margin-left:auto;
+        margin-right:auto;
+        margin-bottom: 40px;
+    }
+    form{
+        font-size: 1.2em;
+    }
+    h1{
+        display:block;
+        text-align: center;
+        margin-left:auto;
+        margin-right:auto;
+    }
+</style>
+</head>
+<body>
+    <h1>Passenger</h1>
+    <div>
+        <form action="php/SeeAllPassengers.php" method="get">
+            <fieldset>
+                <legend><strong>Search Passenger</strong></legend>
+                <label for="seeall">See All Passengers</label>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </div>
+    <div>
+        <form action="php/searchPassenger.php" method="post">
+            <fieldset>
+                <legend><strong>Search Passenger By Id</strong></legend>
+                <label for="id">Passenger Id: </label>
+                <input type="text" id="id" name="id">
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </div>
+    <div>
+        <form action="php/seeAllCards.php" method="post">
+            <fieldset>
+                <legend><strong>See all Cards</strong></legend>
+                <label for="seeall">See All Cards</label>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </div>
+    <div>
+        <form action="php/seeBalanceOfPassenger.php" method="post">
+            <fieldset>
+                <legend><strong>See Card Balance of Passenger</strong></legend>
+                <label for="id">Passenger Id: </label>
+                <input type="text" id="id" name="id"> 
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </div>
+    <div>
+        <form action="php/passengerTakesTransit.php" method="post">
+            <fieldset>
+                <legend><strong>Vehicles Passenger has Taken</strong></legend>
+                <label for="id">Passenger Id: </label>
+                <input type="text" id="id" name="id"> 
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </div>
+    <div>
+        <form action="php/passengerThatTakesAllTransit.php" method="get">
+            <fieldset>
+                <legend><strong>Passenger(s) That has Taken All Transit</strong></legend>
+                <label for="seeall">Find Passenger(s)</label>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </div>
+    
+
+<!--
+    http://localhost/groupProject/passenger.html
+-->
+
+</body>
+</html>

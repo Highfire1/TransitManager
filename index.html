@@ -4,17 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
+
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 
 <body>
-    <h1>Hello World!</h1>
+    <header>
+        <h1>Transit Manager</h1>
+        <button>Manage Cards</button>
+    </header>
 
-    <p>Insert some more text here</p>
-    <p>This will likely be some sort of landing page?</p>
-    <p>aaa</p>
+    <img id="bannerimage" src="assets/banner.jpg">
 
-    <form action="php/initialize_db.php" method="post">
+    <div id="content">
+        <p>Welcome to Transit Manager: the one and only solution for managing a modern transit solution.</p>
+        
+        <h3>Try our new route finder today.</h3>
+        <p>Insert route finder here</p>
+    
+    </div>
+    
+
+
+    <footer>
+        
+
+    </footer>
+
+    <form action="php/DBUtilities.php" method="post">
         <input type="submit" value="Initialize Database.">
     </form>
 </body>

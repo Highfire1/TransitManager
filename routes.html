@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Routes_Stops</title>
+    <meta charset="utf-8">
+    <style>
+        div {
+            display: block;
+            max-width: 1000px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 40px;
+        }
+
+        form {
+            font-size: 1.2em;
+        }
+
+        h1 {
+            display: block;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Routes and Stops</h1>
+    <div>
+        <form action="seeAllRoutes.php" method="get">
+            <fieldset>
+                <legend><strong>All Routes</strong></legend>
+                <label for="seeall">See All Routes</label>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </div>
+    <div>
+        <form action="php/searchRoute.php" method="post">
+            <fieldset>
+                <legend><strong>Find Route</strong></legend>
+                <label for="routeid">Route ID: </label>
+                <input input="text" id="routeid" name="routeid">
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </div>
+    <div>
+        <form action="php/seeStopsOfRoute.php" method="post">
+            <fieldset>
+                <legend><strong>Find associated Stops of Route</strong></legend>
+                <label for="routeid">Route ID: </label>
+                <input input="text" id="routeid" name="routeid">
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </div>
+    <div>
+        <form action="php/seeAllStops.php" method="get">
+            <fieldset>
+                <legend><strong></strong></legend>
+                <label for="seeall">See all Stops</label>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </div>
+    <div>
+        <form action="php/checkRouteTransferable.php" method="post">
+            <fieldset>
+                <legend><strong>Route Transfers</strong></legend>
+                <label for = "routeid">Route ID: </label>"
+                <input input="text" id="routeid" name="routeid">
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </div>
+    <div>
+        <form action="" method="">
+            <fieldset>
+                <legend><strong></strong></legend>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </div>
+
+
+
+
+    <!--
+    http://localhost/groupProject/routes.html
+-->
+
+</body>
+
+</html>
